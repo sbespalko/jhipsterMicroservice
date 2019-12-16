@@ -1,0 +1,37 @@
+{
+    "name": "History",
+    "fields": [
+        {
+            "fieldName": "startDt",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "endDt",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "riskPower",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "client",
+            "otherEntityRelationshipName": "history",
+            "relationshipName": "client",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20191216190147",
+    "entityTableName": "history",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "jhipsterMicroservice",
+    "applications": "*",
+    "microserviceName": "jhipsterMicroservice"
+}
